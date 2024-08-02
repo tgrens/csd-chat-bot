@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="8a4207bc83f30210f8089e30ceaad35d" extends="sys_import_set_row" label="CSDChatBot" max_length="40" name="x_984628_csd_chat_csdchatbot" type="collection">
+        <element label="User ID" max_length="40" name="user_id" type="string"/>
         <element label="Short description" max_length="255" name="short_description" type="string"/>
         <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Caller" max_length="40" name="caller" type="string"/>
+        <index name="index">
+            <element name="caller"/>
+        </index>
     </element>
 </database>
